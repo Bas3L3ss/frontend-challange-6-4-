@@ -4,10 +4,14 @@ import Modal from "./components/Modal";
 import Game from "./components/Game";
 import { BonusModeChoices, NormalModeChoices } from "./Gamefunc";
 import FlipPaper from "./assets/paper-flip.mp3";
+import {
+  getScoreFromLocalStorage,
+  saveScoreToLocalStorage,
+} from "./ScoreFetch";
 
 function App() {
   const [step, setStep] = useState<number>(1);
-  const [score, setScore] = useState<number>(0);
+  const [score, setScore] = useState<number>(getScoreFromLocalStorage());
   const [isModalOn, setIsModalOn] = useState<boolean>(false);
   const [isBonusMode, setIsBonusMode] = useState<boolean>(false);
   const [isWinner, setIsWinner] = useState<boolean>(false);
@@ -16,11 +20,12 @@ function App() {
   >(undefined);
 
   const scoreCalculate = (isWinner: boolean) => {
+    let scoreCurrent = score;
     if (isWinner) {
       setScore(score + 1);
-    } else {
-      return;
+      scoreCurrent = score + 1;
     }
+    saveScoreToLocalStorage(scoreCurrent);
   };
 
   useEffect(() => {

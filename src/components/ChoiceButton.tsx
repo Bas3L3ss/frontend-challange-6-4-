@@ -20,7 +20,7 @@ function ChoiceButton({
 }: ChoiceButtonProps) {
   return (
     <button
-      id="choiceButton"
+      id={`choiceButton-${choiceName}`}
       className={`${
         choiceName === currentChoice ? "bg-black" : `${color}`
       }  md:p-4 p-3 absolute rounded-full shadow-lg  `}

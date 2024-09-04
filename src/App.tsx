@@ -38,7 +38,7 @@ function App() {
   }, [isModalOn, isBonusMode]);
 
   return (
-    <main>
+    <>
       <Modal
         isModalOn={isModalOn}
         setIsModalOn={setIsModalOn}
@@ -68,7 +68,7 @@ function App() {
       >
         RULES
       </button>
-    </main>
+    </>
   );
 }
 

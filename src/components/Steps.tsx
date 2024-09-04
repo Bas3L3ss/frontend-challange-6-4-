@@ -188,8 +188,10 @@ function Step2({ choice, choiceColor }: Step2Props) {
     <div className="relative grid justify-between grid-cols-2 -mt-24 ">
       <div className="flex flex-col items-center justify-center">
         <p className="mb-5 font-bold text-white uppercase">You picked</p>
-        <div className={`  ${choiceColor} p-4  rounded-full shadow-lg w-fit`}>
-          <div className="flex items-center justify-center  w-[120px] rounded-full aspect-square bg-white  shadow-lg">
+        <div
+          className={`  ${choiceColor}  md:p-4 p-3  rounded-full shadow-lg w-fit`}
+        >
+          <div className="flex items-center justify-center  md:w-[120px] w-[80px] rounded-full aspect-square bg-white  shadow-lg">
             {(choice == "lizard" && <IconLizard />) ||
               (choice == "rock" && <IconRock />) ||
               (choice == "scissors" && <IconScissors />) ||
@@ -201,9 +203,9 @@ function Step2({ choice, choiceColor }: Step2Props) {
       <div className="flex flex-col items-center justify-center">
         <p className="mb-5 font-bold text-white uppercase">the house picked</p>
         <div
-          className={`  bg-neutral-darkText p-4  rounded-full shadow-lg w-fit`}
+          className={`  bg-neutral-darkText  md:p-4 p-3  rounded-full shadow-lg w-fit`}
         >
-          <div className="flex items-center justify-center  w-[120px] rounded-full aspect-square bg-neutral-darkText  shadow-lg"></div>
+          <div className="flex items-center justify-center  md:w-[120px] w-[80px] rounded-full aspect-square bg-neutral-darkText  shadow-lg"></div>
         </div>
       </div>
     </div>
@@ -214,8 +216,10 @@ function Step3({ choice, choiceColor, houseChoice }: Step3Props) {
     <div className="relative grid justify-between grid-cols-2 -mt-24 ">
       <div className="flex flex-col items-center justify-center">
         <p className="mb-5 font-bold text-white uppercase">You picked</p>
-        <div className={`  ${choiceColor} p-4  rounded-full shadow-lg w-fit`}>
-          <div className="flex items-center justify-center  w-[120px] rounded-full aspect-square bg-white  shadow-lg">
+        <div
+          className={`  ${choiceColor}  md:p-4 p-3  rounded-full shadow-lg w-fit`}
+        >
+          <div className="flex items-center justify-center  md:w-[120px] w-[80px] rounded-full aspect-square bg-white  shadow-lg">
             {(choice == "lizard" && <IconLizard />) ||
               (choice == "rock" && <IconRock />) ||
               (choice == "scissors" && <IconScissors />) ||
@@ -226,8 +230,10 @@ function Step3({ choice, choiceColor, houseChoice }: Step3Props) {
       </div>
       <div className="flex flex-col items-center justify-center">
         <p className="mb-5 font-bold text-white uppercase">the house picked</p>
-        <div className={`  ${choiceColor} p-4  rounded-full shadow-lg w-fit`}>
-          <div className="flex items-center justify-center  w-[120px] rounded-full aspect-square bg-white  shadow-lg">
+        <div
+          className={`  ${choiceColor}  md:p-4 p-3  rounded-full shadow-lg w-fit`}
+        >
+          <div className="flex items-center justify-center  md:w-[120px] w-[80px] rounded-full aspect-square bg-white  shadow-lg">
             {(houseChoice == "lizard" && <IconLizard />) ||
               (houseChoice == "rock" && <IconRock />) ||
               (houseChoice == "scissors" && <IconScissors />) ||

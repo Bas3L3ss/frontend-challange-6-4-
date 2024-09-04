@@ -24,7 +24,6 @@ function App() {
   };
 
   useEffect(() => {
-    setScore(0);
     setChoice(undefined);
     setStep(1);
   }, [isBonusMode]);

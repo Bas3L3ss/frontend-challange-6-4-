@@ -25,9 +25,9 @@ function ChoiceButton({
       }  md:p-4 p-3 absolute rounded-full shadow-lg  `}
       onClick={() => handleClick(choiceName, color)}
     >
-      <div className="flex items-center justify-center  md:w-[120px]  w-[80px] rounded-full aspect-square bg-white  shadow-lg">
+      <span className="flex items-center justify-center  md:w-[120px]  w-[80px] rounded-full aspect-square bg-white  shadow-lg">
         <Svg />
-      </div>
+      </span>
     </button>
   );
 }

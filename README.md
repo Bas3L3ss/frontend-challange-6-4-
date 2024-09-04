@@ -27,7 +27,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [Github](https://github.com/Bas3L3ss/frontend-challange-6-4-)
-- Live Site URL: [Vercel](https://frontend-challange-6-4-2vnnco9rn-baseless-projects.vercel.app/)
+- Live Site URL: [Vercel](https://frontend-challange-6-4-git-main-baseless-projects.vercel.app/)
 
 ## My process
 

@@ -39,6 +39,7 @@ function App() {
 
   return (
     <>
+      <h1 className="sr-only">Rock Paper Scissors</h1>
       <Modal
         isModalOn={isModalOn}
         setIsModalOn={setIsModalOn}

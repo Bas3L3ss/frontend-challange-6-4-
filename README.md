@@ -12,6 +12,7 @@ Users should be able to:
 - Play Rock, Paper, Scissors against the computer
 - Maintain the state of the score after refreshing the browser _(optional)_
 - **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer _(optional)_
+  => btw bonus lvl will be available as user gets 10 scores
 
 ### Screenshot
 
@@ -25,8 +26,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Bas3L3ss/frontend-challange-6-4-)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/Bas3L3ss/frontend-challange-6-4-)
+- Live Site URL: [Vercel](https://frontend-challange-6-4-2vnnco9rn-baseless-projects.vercel.app/)
 
 ## My process
 

@@ -38,7 +38,7 @@ function App() {
   }, [isModalOn, isBonusMode]);
 
   return (
-    <>
+    <div className="h-[100vh] w-[100vw] pt-5 md:pt-10 relative overflow-hidden  ">
       <h1 className="sr-only">Rock Paper Scissors</h1>
       <Modal
         isModalOn={isModalOn}
@@ -47,7 +47,7 @@ function App() {
         setIsBonusMode={setIsBonusMode}
         score={score}
       />
-      <div className="md:w-[65%] sm:w-[80%] w-[90%] mx-auto mt-5 md:mt-10">
+      <div className="md:w-[65%] sm:w-[80%] w-[90%] mx-auto ">
         <ScoreBoard isBonus={isBonusMode} score={score} />
         <Game
           step={step}
@@ -61,7 +61,7 @@ function App() {
         />
       </div>
       <button
-        className=" md:z-50 fixed md:bottom-5 md:right-16   bottom-4 right-[49%] translate-x-[50%] text-neutral-200 font-bold border  px-6 rounded-md py-[0.2rem]"
+        className=" md:z-50 fixed md:bottom-5 md:right-16   bottom-4 right-[50%] translate-x-[50%] text-neutral-200 font-bold border  px-6 rounded-md py-[0.2rem]"
         onClick={() => {
           new Audio();
           setIsModalOn(!isModalOn);
@@ -69,7 +69,7 @@ function App() {
       >
         RULES
       </button>
-    </>
+    </div>
   );
 }
 

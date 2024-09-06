@@ -90,7 +90,7 @@ function Game({
   // }, [step]);
 
   return (
-    <div className="mt-44">
+    <div className=" mt-44">
       {step === 1 && (
         <Step1
           setChoice={setChoice}

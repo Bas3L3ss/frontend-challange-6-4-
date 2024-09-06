@@ -140,7 +140,7 @@ function Step1({
     );
   } else {
     return (
-      <div className="relative w-[350px] -mt-[10px] mx-auto ">
+      <div className="relative w-[350px]  -mt-[10px] mx-auto ">
         <div className="absolute -top-[4rem]">
           <ChoiceButton
             Svg={IconPaper}
@@ -150,6 +150,7 @@ function Step1({
             currentChoice={Choice}
           />
         </div>
+
         <div className="absolute bottom-[5.5rem] md:left-[6rem] left-[7rem]">
           <ChoiceButton
             Svg={IconRock}
@@ -174,7 +175,7 @@ function Step1({
         <button
           className={`${
             isConfirmable ? "absolute" : "hidden"
-          }  left-[50%] translate-x-[-40%] -top-[8rem] rounded-md font-semibold uppercase bg-white py-2 px-4`}
+          }  left-[50%] translate-x-[-50%] -top-[8rem] rounded-md font-semibold uppercase bg-white py-2 px-4`}
           onClick={proceed}
         >
           confirm

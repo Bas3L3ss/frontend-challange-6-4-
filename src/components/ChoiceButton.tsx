@@ -25,7 +25,7 @@ function ChoiceButton({
       id={`choiceButton-${choiceName}`}
       className={`${
         isActive ? "bg-black" : `${color}`
-      }  md:p-4 p-3 absolute rounded-full shadow-lg `}
+      }  md:p-4 p-3 absolute rounded-full shadow-lg  `}
       onClick={() => handleClick(choiceName, color)}
       aria-pressed={isActive} // Indicates the button's active state
       aria-label={`Choose ${choiceName}`} // Describes the button for screen readers
